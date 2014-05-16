@@ -34,7 +34,7 @@ class VF_App
             return $this->_config;
         }
         else{
-            return $this->_config[$config];
+            return in_array($this->_config, $config) ? $this->_config[$config] : '';
         }
     }
 
